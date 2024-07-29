@@ -1,0 +1,180 @@
+<!-- 
+<style>
+    .nav-bar {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        background-color: #fff;
+        display: inline-block;
+        margin: .2em;
+    }
+    
+    .nav-bar ul{ 
+        color: #000;
+        font-size: 1.2em;
+        display: inline;
+    }
+    
+    .nav-bar ul a{
+        padding-inline: 1rem;
+        float: right;
+        font-size: 1.2em;
+        margin-top: .3rem;
+    }
+ </style>
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Booking</title>
+    
+     <!-- font awsome link -->
+     <script src="https://kit.fontawesome.com/bd91402b94.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="user_info_styling.css">
+
+    <!-- js form form_validation -->
+    <script>
+
+        // function for valid
+        function valid() {
+            return is_valid;
+        }
+
+        //global variable
+        is_valid = true;
+
+        function form_validation() {
+            // get values of inputs using id's..
+            var name = document.getElementById('user-name').value;
+            var age = document.getElementById('user-age').value;
+            var phno = document.getElementById('user-phno').value;
+            var lisence = document.getElementById('user-lisence').value;
+            // alert(name + age + phno, lisence);
+
+            // regular expressions..
+            var namecheck = name.match(/^[A-Za-z ]{3,20}$/);
+            var phnocheck = phno.match(/^(6|7|8|9)\d{9}$/);
+            var agecheck = age.match(/^[0-9]{1,3}$/);
+            var lisencecheck = lisence.match(/^[a-zA-Z]{4,}$/);
+
+            // disable the proceed at first
+            document.getElementById('proceed-btn').disabled = true; // in form it self we can disable
+
+            // test for validation..
+            if (!namecheck) {
+                document.getElementById('user-name-error').innerHTML = "**In valid value for NAME. (min-3 chars)";
+                document.getElementById('success-msg').src = "error-msg.jpg";
+                document.getElementById('success-msg').style = "width:2rem; height: 2rem";
+                return false;
+            } else {
+                document.getElementById('user-name-error').innerHTML = "";
+            }
+
+            if (age < 18 || !agecheck || age > 120) {
+                document.getElementById('user-age-error').innerHTML = "**In valid vlaue for AGE. (18 <= age <= 70)";
+                document.getElementById('success-msg').src = "error-msg.jpg";
+                document.getElementById('success-msg').style = "width:2rem; height: 2rem";
+                return false;
+            } else {
+                document.getElementById('user-age-error').innerHTML = "";
+            }
+
+            if (!phnocheck) {
+                document.getElementById('user-phno-error').innerHTML = "**In valid value for PH-No.";
+                document.getElementById('success-msg').src = "error-msg.jpg";
+                document.getElementById('success-msg').style = "width:2rem; height: 2rem";
+                return false;
+            } else {
+                document.getElementById('user-phno-error').innerHTML = "";
+            }
+
+            if (!lisencecheck) {
+                document.getElementById('user-lisence-error').innerHTML = "**In valid value for LISENCE.";
+                document.getElementById('success-msg').src = "error-msg.jpg";
+                document.getElementById('success-msg').style = "width:2rem; height: 2rem";
+                return false;
+            } else {
+                document.getElementById('user-lisence-error').innerHTML = "";
+            }
+
+            if (is_valid) {  // if validated
+
+                document.getElementById('success-msg').src = "success-msg.png"; // on valid info
+                document.getElementById('success-msg').style = "width:3rem; height: 3rem";
+                document.getElementById('proceed-btn').disabled = false; // now he can proceed
+                return true;
+
+            }
+            else {
+                document.getElementById('success-msg').innerHTML = '**';
+                document.getElementById('proceed-btn').disabled = true;
+                return false;
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+        <div class="nav-bar">
+            <div class="nav-items">
+                <ul><i class="fa-solid fa-house-user fa-beat-fade"></i> <a href="">Home</a></ul>
+                <ul><i class="fa-solid fa-phone fa-beat-fade"></i> <a href="">Reach us</a></ul>
+                <ul><i class="fa-solid fa-lock fa-beat-fade"></i> <a href="">Privacy Statements</a></ul>
+                <ul><i class="fa-solid fa-circle-info fa-beat-fade"></i> <a href="">Company info</a></ul>
+            </div>
+        </div>
+
+        <div class="user-info-form">
+            <!-- <img src="car-formalities.jpeg" alt="Loading.."> -->
+            <div class="label">
+                <p>Provide basic details and then proceed for booking</p>
+            </div>
+    
+            <form action="/" method="post">
+                <label for="user-name">Name</label>
+                <input type="text" name="user-name" id="user-name">
+                <span id="user-name-error" class="text-danger"></span>
+
+                <label for="user-age">Age</label>
+                <input type="number" name="user-age" id="user-age">
+                <span id="user-age-error" class="text-danger"></span>
+
+                <label for="user-phno">Ph-no</label>
+                <input type="tel" name="user-phno" id="user-phno">
+                <span id="user-phno-error" class="text-danger"></span>
+
+                <label for="user-mail">E-mail</label>
+                <input type="email" name="user-mail" id="user-mail">
+                <span id="user-mail-error" class="text-danger"></span>
+
+                <label for="user-lisence">Lisence Id</label>
+                <input type="text" name="user-lisence" id="user-lisence">
+                <span id="user-lisence-error" class="text-danger"></span>
+
+                <label for="govt-doc">Valid govt.doc</label>
+                <input type="file" name="govt-doc" id="govt-doc">
+
+                <div class="back-validate-btn">
+                    <button onclick="location.href='history.back()'" id="back-btn">BACK</button>
+                    <div class="span-validate-btn">
+                        <!-- <span id="success-msg"></span> -->
+                        <img src="error-msg.jpg" alt="Loading.." style="width:2rem; height:2rem" id="success-msg">
+                        <button onclick="return form_validation();" id="validate-btn" type="button">VALIDATE</button>
+                    </div>
+                </div>
+                <button type="submit" id="proceed-btn" disabled="disabled">PROCEED FOR PAYMENT</button>
+                <!-- <input type="button" value="PROCEED FOR PAYMENT" id="proceed-btn"> -->
+            </form>
+        </div>
+
+</body>
+
+</html>

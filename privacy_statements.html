@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awsome link -->
+    <script src="https://kit.fontawesome.com/bd91402b94.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="privacy_statements_styling.css">
+    <title>Advance Booking</title>
+
+    <!-- script for checking user accepatanc over privacy statements -->
+    <script>
+
+        function ischeck() {
+
+            var ele = document.getElementById('accept');
+            if (ele.checked) {
+                ele.style.color = "green";
+            }
+            else {
+                alert('You did not accept our privacy statements.');
+                location.href = 'privacy_statements.html';
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="nav-items">
+            <ul><i class="fa-solid fa-house-user fa-fade"></i> <a href="index.html">Home</a></ul>
+            <ul><i class="fa-solid fa-phone fa-fade"></i> <a onclick="window.location = '#footer'">Reach us</a></ul>
+            <ul><i class="fa-solid fa-lock fa-fade"></i> <a href="privacy_statements.html">Privacy Statements</a></ul>
+            <ul><i class="fa-solid fa-circle-info fa-fade"></i> <a href="company_info.html">Company info</a></ul>
+        </div>
+    </div>
+    <br>
+    <div class="statements">
+
+        <div class="division">
+            <h4><i class="fa-sharp fa-solid fa-circle-info"></i> User Information</h4>
+            <i class="fa-solid fa-motorcycle"></i> You trusted us!...We never let your infomation into trouble by any
+            third parties/sites. <br>
+            <i class="fa-solid fa-car"></i> Our technical team is here to help while booking. <br>
+            <i class="fa-solid fa-motorcycle"></i> Please provide valid time lapse, to make sure your vehicle
+            availability. <br>
+            <i class="fa-solid fa-car"></i> Check availability and proceed for vehicle selection. <br>
+        </div>
+
+        <div class="division">
+            <h4><i class="fa-solid fa-car-side"></i> Vehicle Selection</h4>
+            <i class="fa-solid fa-motorcycle"></i> The all displayed vehicles are available for your trip!... <br>
+            <i class="fa-regular fa-charging-station"></i> Fuel charges are on user based on his/her usage only. <br>
+            <i class="fa-solid fa-car"></i> No, wished model is arranged in case of arguement with the company
+            members.<br>
+            <i class="fa-solid fa-motorcycle"></i> Only available models are distributed for service. <br>
+            <i class="fa-solid fa-car"></i> Recommended to book in advance if you found your favourite GAADi. <br>
+        </div>
+
+        <div class="division">
+            <h4><i class="fa-regular fa-credit-card"></i> Payment</h4>
+            <i class="fa-solid fa-car"></i> Your booking confirmation should be done after success payment process. <br>
+            <i class="fa-solid fa-motorcycle"></i> Refund should be happend in case of technical issues in payment
+            process. <br>
+            <i class="fa-solid fa-motorcycle"></i> And in case of ride cancellation with in the time period of half the
+            duration between booking
+            and renting time. <br>
+            <i class="fa-solid fa-car"></i> Extra penalty is added in case of user should not return the vehicle in
+            ontime. <br>
+            <i class="fa-solid fa-motorcycle"></i> In case any accidental damage to the vehicle, the charges will be
+            upon the user only. <br>
+        </div>
+
+        <div class="division">
+            <h4><i class="fa-sharp fa-solid fa-car-burst"></i> Road Safety</h4>
+            <i class="fa-solid fa-helmet-un"></i> User should follow traffic rules and wear seat belt and helmet. <br>
+            <i class="fa-sharp fa-regular fa-file-contract"></i> User sholdn't drink and drive, in case of cops we are
+            not responsible for the road chalan's. <br>
+            <i class="fa-solid fa-wrench"></i> We are not responsible for fire, road accidental situations. <br>
+        </div>
+
+        <div class="acceptance">
+            <form action="" method="post">
+                <input type="checkbox" name="accept" id="accept"> <span id="confirm"> I accept the above all company
+                    privacy statements, Once you accept it automaticaly saves
+                    your data.</span> <br>
+                <script>
+                    var ele = document.getElementById('accept');
+                    if (ele.checked) {
+                        alert('hello');
+                        document.getElementById('confirm').style.color = "green";
+                    }
+                </script>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-media">
+            <h3>Follow us on</h3>
+            <h4><i class="fa-brands fa-instagram fa-bounce"></i> Instagram</h4>
+            <h4><i class="fa-brands fa-google fa-bounce"></i> Google</h4>
+            <h4><i class="fa-brands fa-facebook-f fa-bounce"></i> facebook</h4>
+            <h4><i class="fa-brands fa-youtube fa-bounce"></i> YouTube</h4>
+            <h4><i class="fa-brands fa-twitter fa-bounce"></i> twitter</h4>
+            <h4><i class="fa-brands fa-telegram fa-bounce"></i> telegram</h4>
+        </div>
+        <div class="about-us">
+            <h3>About us</h3>
+            <h4>Book your GAADi</h4>
+            <h4>started in 2023</h4>
+            <h4>we provide you </h4>
+            <h4>fast and best serve</h4>
+            <h4>expansional buniness</h4>
+            <h4>trusted and most reviewed company</h4>
+        </div>
+        <div class="partners">
+            <h3>Our partners</h3>
+            <h4>TATA motors pvt.ltd</h4>
+            <h4>A1 automobiles pvt.ltd</h4>
+            <h4>ABC finance limiteds.</h4>
+            <h4>XYZ automobile service providers..</h4>
+        </div>
+    </footer>
+
+</body>
+
+</html>

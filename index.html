@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awsome link -->
+    <script src="https://kit.fontawesome.com/bd91402b94.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index_styling.css">
+    <title>Advance Booking</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="car-bike2.jpg" alt="">
+        <div>
+            <h3>BOOK YOUR GAADi</h3>
+            <h4>Fast and Responsive service</h4>
+        </div>
+    </div>
+    
+    <div class="nav-bar">
+        <ul><i class="fa-solid fa-house-user"></i> <a href="index.html">Home</a></ul>
+        <ul><i class="fa-solid fa-phone"></i> <a onclick="window.location = '#footer'">Reach us</a></ul>
+        <ul><i class="fa-solid fa-lock"></i> <a href="privacy_statements.html">Privacy Statements</a></ul>
+        <ul><i class="fa-solid fa-circle-info"></i> <a href="company_info.html">Company info</a></ul>
+    </div>
+
+    <ul></ul>
+
+    <div class="instructions">
+        <img src="bike-car.jpg" alt="">
+        <div>
+            <h1>Read me</h1>
+            <h4><i class="fa-regular fa-hand-point-right"></i> Select your renting and returning date and timing</h4>
+            <h4><i class="fa-regular fa-hand-point-right"></i> Choose your vehicle type suited for your trip</h4>
+            <h4><i class="fa-regular fa-hand-point-right"></i> Pick up your convienient vehicle by checking availability
+            </h4>
+            <h4><i class="fa-regular fa-hand-point-right"></i> Validate your basic formalities and proceed for payment,
+                that's it!....</h4>
+            <h4>Once start your booking process don't press back !, Otherwise quit and start from beginning.</h4>
+
+            <button onclick="window.location = '#form'">Let's Go</button>
+        </div>
+    </div>
+
+    <div class="process-start" id="form">
+        <img src="smoke.jpg" alt="">
+        <h3>Your Bookings start from here!..</h3>
+        <!-- input form -->
+        <form action="check_availability.php" method="post">
+            <div class="col1">
+                <label for="rental-date">Renting On</label> <br>
+                <input type="datetime-local" name="rental-datetime" id="rental-date">
+            </div>
+            <div class="col2">
+                <label for="recovery-date">Return On</label> <br>
+                <input type="datetime-local" name="return-datetime" id="return-datetime">
+            </div>
+            <div class="col3">
+                <label for="vehicle-type">Vehicle type</label> <br>
+                <select name="vehicle-type" id="vehilce-type" placeholder="None">
+                    <option value="none" selected disabled hidden>Select Your Vehicle </option>
+                    <option value="TW">Bikes</option>
+                    <option value="FW">Cars/Jeep</option>
+                </select>
+            </div>
+            <input type="submit" value="Check For Availability" id="avail-btn">
+        </form>
+
+        <!-- <img src="car-removebg.png" alt="" id="car-alone">
+        <img src="bike-removebg.png" alt="" id="bike-alone"> -->
+    </div>
+
+    <footer id="footer">
+        <div class="about-us">
+            <h3>Contact us</h3>
+            <h4>Book your GAADi</h4>
+            <h4>started in 2023</h4>
+            <h4>+91 192011460</h4>
+            <h4>Your trusted one</h4>
+            <h4>Expansional buniness</h4>
+            <h4>Most reviewed company</h4>
+            <h4>mail us: 192011460.sse@saveetha.com</h4>
+        </div>
+        <div class="social-media">
+            <h3>Follow us on</h3>
+            <h4><i class="fa-brands fa-instagram fa-bounce"></i> Instagram</h4>
+            <h4><i class="fa-brands fa-google fa-bounce"></i> Google</h4>
+            <h4><i class="fa-brands fa-facebook-f fa-bounce"></i> facebook</h4>
+            <h4><i class="fa-brands fa-youtube fa-bounce"></i> YouTube</h4>
+            <h4><i class="fa-brands fa-twitter fa-bounce"></i> twitter</h4>
+            <h4><i class="fa-brands fa-telegram fa-bounce"></i> telegram</h4>
+        </div>
+        <div class="partners">
+            <h3>Our partners</h3>
+            <h4>TATA motors pvt.ltd</h4>
+            <h4>A1 automobiles pvt.ltd</h4>
+            <h4>ABC finance limiteds.</h4>
+            <h4>XYZ automobile service providers..</h4>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

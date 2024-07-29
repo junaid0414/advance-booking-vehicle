@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* nav bar styling */
+
+.nav-bar {
+    width: 100%;
+}
+
+.nav-bar .nav-items {
+    float: right;
+    margin: .5rem 0;
+}
+
+.nav-bar .nav-items ul {
+    display: inline;
+    padding-inline: 1rem;
+}
+
+.nav-bar .nav-items a {
+    text-decoration: none !important;
+    font-size: 1.5rem;
+    color: #000;
+    display: inline;
+}
+
+.nav-bar .nav-items ul i {
+    font-size: 1.7rem;
+}
+
+/* container */
+.container {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/*  statements*/
+.statements {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 1rem;
+    margin: 1rem;
+    box-shadow: 0 0 20px 0 rgba(200, 200, 200, 0.5);
+}
+
+.statements .picture {
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid blue; */
+    margin-top: 4rem;
+}
+
+.statements .picture img {
+    width: 100%;
+    height: auto;
+    margin-top: 4rem;
+    max-width: 100%;
+}
+
+.statements .text {
+    width: fit-content;
+    height: auto;
+    max-width: 100%;
+    margin-top: 4rem;
+    /* border: 2px solid red; */
+}
+
+.statements .text h4 {
+    text-align: center;
+    margin: .9rem;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.statements .text h3 {
+    text-align: left;
+    margin: .9rem;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.statements .text {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.statements .text #right {
+    text-align: left;
+}
+
+/* footer styling */
+
+footer {
+    width: 100%;
+    /* display: flex;
+    flex-direction: row; */
+    padding: 2rem;
+    line-height: 4rem;
+    letter-spacing: 2px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr;
+}
+
+footer h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+footer h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+footer i {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 500px) {
+    .instructions div button {
+        font-size: 1.2rem;
+    }
+
+    footer div h3 {
+        font-size: 1.8rem;
+    }
+
+    footer div h4,
+    footer div i {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 500px) {
+    .instructions div button {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    * {
+        font-size: 10.5px;
+    }
+
+    .instructions div button {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    * {
+        font-size: 11px;
+    }
+
+    .instructions div button {
+        font-size: 3rem;
+    }
+
+    .process-start .col1 label,
+    .process-start .col2 label,
+    .process-start .col3 label {
+        font-size: 3rem;
+        margin-left: 25%;
+    }
+}

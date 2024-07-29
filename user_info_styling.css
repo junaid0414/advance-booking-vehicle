@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    font-size: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url('car-formalities.jpeg');
+    color: #000;
+    letter-spacing: .6px;
+    /* line-height: 1.6; */
+}
+
+/* nav bar styling */
+
+.nav-bar {
+    width: 100%;
+    padding: 1rem;
+}
+
+.nav-bar .nav-items {
+    float: right;
+    margin: .5rem 0;
+}
+
+.nav-bar .nav-items ul {
+    display: inline;
+    padding-inline: 1rem;
+}
+
+.nav-bar .nav-items a {
+    text-decoration: none !important;
+    font-size: 2rem;
+    display: inline;
+    color: #94ddeb;
+}
+
+.nav-bar .nav-items ul i {
+    font-size: 1.7rem;
+    color: #6edfcd;
+}
+
+/* user form */
+
+.user-info-form .label{
+    text-align: center;
+    padding: 1rem;
+}
+
+.user-info-form .label p{
+    font-size: 2rem;
+    color: #673ae1;
+}
+
+.user-info-form {
+    width: 50%;
+    height: max-content;
+    /* box-shadow: 0 0 20px 0 rgba(209, 207, 207, 0.91); */
+    padding: 0 2rem 2rem 2rem;
+    border-radius: .2em;
+    margin: 5rem auto 0 auto;
+    background-color: #ffffff;
+}
+
+.user-info-form label
+ {
+    display: block;
+    padding-top: 1.5rem;
+    margin-bottom: .2rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+ .user-info-form input, .user-info-form button
+ {
+    border-radius: .2em;
+    font-size: 1.8rem;
+    font-weight: 400;
+    border: none;
+    height: 4rem;
+    width: 100%;
+    background: #d2dbdb;
+    padding-left: .7rem;
+} 
+
+/* error-handling */
+
+.user-info-form form .text-danger{
+    color: #d7ca55;
+    font-size: 1.5rem;
+}
+
+ .user-info-form form .back-validate-btn #back-btn,
+ .user-info-form form .back-validate-btn #validate-btn{
+    width: max-content;
+    height: auto;
+    background-color: #3663ea;
+    color: #fff;
+    padding: .7rem;
+    border: none;
+    font-size: 1.7rem;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 4rem;
+    border-radius: .3rem;
+}
+
+ .user-info-form form .back-validate-btn #back-btn:hover,
+ .user-info-form form .back-validate-btn #validate-btn:hover{
+  background-color: #2256c7;
+  color: #fff;
+}
+
+ .user-info-form form .back-validate-btn{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height:auto ;
+}
+
+ .user-info-form form .back-validate-btn div{
+   width: max-content;
+   height: auto;
+   float: right;
+} 
+
+ .user-info-form form .back-validate-btn #success-msg{
+    width: 10rem;
+    height: 10rem;
+}
+
+ .user-info-form #proceed-btn{
+     margin-top: 4rem;
+     font-weight: 500;
+     font-size: 2rem;
+     padding: 1rem;
+     height: auto;
+     background-color: #3663ea;
+     color: #fff;
+}
+
+ .user-info-form #proceed-btn:hover{
+    color: #fff;
+    background-color: #1d4db5;
+}
+
+@media(max-width:500px) {
+    * {
+        font-size: 8px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    * {
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    * {
+        font-size: 10px;
+    }
+
+    .nav-bar .nav-items ul i {
+        font-size: 1.7rem;
+        color: #3e7275;
+    }
+
+    .nav-bar .nav-items ul a{
+        color: #4d96a4;
+    }
+
+    /* .user-info-form{
+        background-color: #f6f6f6f8;
+    } */
+}
+
+@media(max-width: 600px){
+    .user-info-form{
+        width: 100%;
+        margin: 5rem 2rem 2rem 2rem;
+    }
+}
