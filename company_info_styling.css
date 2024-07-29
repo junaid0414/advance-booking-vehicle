@@ -37,141 +37,35 @@ body {
     font-size: 1.7rem;
 }
 
-/* container */
-.container {
-    margin: 1rem;
-    padding: 1rem;
-}
-
-/*  statements*/
-.statements {
+.who-we-are{
     width: 100%;
     height: auto;
+    border: 2px solid black;
     display: flex;
-    align-items: center;
-    padding: 0 0 0 1rem;
-    margin: 1rem;
-    box-shadow: 0 0 20px 0 rgba(200, 200, 200, 0.5);
+    align-items: center;  
 }
 
-.statements .picture {
-    width: 50%;
+.who-we-are img{
+    width: 90%;
     height: 100%;
-    /* border: 2px solid blue; */
-    margin-top: 4rem;
+    margin: .5rem 0 .5rem .5rem;
+    border: 2px solid brown;
 }
 
-.statements .picture img {
-    width: 100%;
+.who-we-are .text{
+    width: 290%;
     height: auto;
-    margin-top: 4rem;
-    max-width: 100%;
+    display: inline-block;
+    border: 2px solid blue;
 }
 
-.statements .text {
-    width: fit-content;
-    height: auto;
-    max-width: 100%;
-    margin-top: 4rem;
-    /* border: 2px solid red; */
+.who-we-are h4{
+    font-size: 2vw;
 }
 
-.statements .text h4 {
-    text-align: center;
-    margin: .9rem;
-    font-size: 3rem;
-    font-weight: 900;
-}
-
-.statements .text h3 {
-    text-align: left;
-    margin: .9rem;
-    font-size: 2.3rem;
-    font-weight: 600;
-}
-
-.statements .text {
-    font-size: 2rem;
-    padding: 1rem;
-}
-
-.statements .text #right {
-    text-align: left;
-}
-
-/* footer styling */
-
-footer {
+.who-we-are p{
     width: 100%;
-    /* display: flex;
-    flex-direction: row; */
-    padding: 2rem;
-    line-height: 4rem;
-    letter-spacing: 2px;
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 1fr;
+    height: 100%;
+    font-size: 2vw;
 }
 
-footer h3 {
-    font-size: 2.5rem;
-    font-weight: 500;
-    margin-bottom: 2rem;
-}
-
-footer h4 {
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
-footer i {
-    font-size: 1.5rem;
-}
-
-@media (max-width: 500px) {
-    .instructions div button {
-        font-size: 1.2rem;
-    }
-
-    footer div h3 {
-        font-size: 1.8rem;
-    }
-
-    footer div h4,
-    footer div i {
-        font-size: 1rem;
-    }
-}
-
-@media (min-width: 500px) {
-    .instructions div button {
-        font-size: 1.5rem;
-    }
-}
-
-@media screen and (min-width: 700px) {
-    * {
-        font-size: 10.5px;
-    }
-
-    .instructions div button {
-        font-size: 2rem;
-    }
-}
-
-@media screen and (min-width: 900px) {
-    * {
-        font-size: 11px;
-    }
-
-    .instructions div button {
-        font-size: 3rem;
-    }
-
-    .process-start .col1 label,
-    .process-start .col2 label,
-    .process-start .col3 label {
-        font-size: 3rem;
-        margin-left: 25%;
-    }
-}

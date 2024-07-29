@@ -1,356 +1,226 @@
 * {
     box-sizing: border-box;
+    font-size: 10px;
     margin: 0;
     padding: 0;
-    font-size: 10px;
 }
 
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 1.6;
+    image-rendering: -webkit-optimize-contrst;
+    image-rendering: crisp-edges;
+    /* background-color: #1c1b1b; */
+
 }
 
 /* header styling */
 
 .header {
     position: relative;
-}
-
-.header img {
+    border: 3px dotted #000;
     width: 100%;
-    filter: blur(1.2px);
+    height: 20rem;
 }
-
-.header div {
-    position: absolute;
-    width: 100%;
-    top: 25%;
+ 
+.header .header-text h1,
+.header div h4 {
     color: #fff;
     text-align: center;
 }
 
-.header div h3 {
-    font-size: 4vw;
-    font-weight: 300;
-    letter-spacing: 3px;
+.header .header-text h1 {
+    padding-bottom: .6rem;
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: .3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.header div h4 {
-    font-size: 3vw;
-    font-weight: 200;
-    letter-spacing: 3px;
+.header .header-text h4 {
+    font-size: 3em;
+    font-weight: 450;
+    letter-spacing: .15rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* nav bar styling */
+/* navigation */
 
 .nav-bar {
+    max-width: 100%;
     width: 100%;
-    margin: auto auto;
+    height: 3em;
+    display: inline-block;
+    margin: .2em;
 }
 
 .nav-bar ul {
+    font-size: 1.2em;
     display: inline;
-    padding-inline: 1rem;
 }
 
-.nav-bar a {
-    text-decoration: none !important;
-    font-size: 1.5rem;
+.nav-bar ul a {
+    padding-inline: 1rem;
+    float: right;
+    font-size: 1.2em;
+    margin-top: .3rem;
+}
+
+/* body styling  */
+.body-content {
+    background-color: #000;
+}
+
+.body-content .body-background{
+     position: relative;
+     margin: 1rem;
+     box-shadow: 0 0 20px 0 rgba(236, 234, 234, 0.948);
+}
+
+.body-background div{
+    position: absolute;
+    box-sizing: border-box;
+    box-shadow: 0 0 20 0 rgba(236, 234, 234, 0.948);
+    width: 100%;
+    left: 45%;
+    right: 50%;
+    top: 2rem;
+}
+
+.body-background div h3{
+    font-size: 3rem;
+    color: #1c1b1b;
+    margin: 0;
+}
+
+.body-background div h4{
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-left: 1rem;
+    line-height: 1.6;
+    letter-spacing: .1px;
+}
+
+.body-background div h2{
+    color: #052f76;
+    text-align: center;
+}
+
+.body-content .body-background img{
+    position:absolute;
+    width: 100%;
+    filter: blur(0px);
+    padding: 0;
+    margin: 0;
+}
+
+.body-content .info-container h3{
+    position: absolute;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1px;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #fff;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+.availability {
+    box-shadow: 0 0 20px 0 rgba(236, 234, 234, 0.948);
+    position: absolute;
+    width: 40%;
+    height: auto;
+    padding: .2em;
+    right: 20%;
+    margin-right: 4rem;
+    margin-top: 5rem;
+}
+
+.availability p {
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 1rem;
+    text-transform: uppercase;
+}
+
+.availability label {
+    display: block;
+    font-size: 1.4rem;
+    margin: .3rem;
+}
+
+.availability span {
+    font-size: 2rem;
+    margin: .3rem;
+    font-weight: 400;
+    text-transform: uppercase;
     color: #000;
 }
 
-.nav-bar ul i {
-    font-size: 1.5rem;
-}
-
-.instructions {
-    position: relative;
+.availability form {
     width: 100%;
+    height: auto;
+    padding: 2.5rem 1rem 1rem 1rem;
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.instructions img {
+.availability input,
+select {
     width: 100%;
-    filter: blur(.2px);
-}
-
-.instructions div {
-    position: absolute;
-    color: #fff;
-    width: 100%;
-    margin: 0;
-    box-shadow: 0 0 20px 0 rgba(244, 238, 238, 0.981);
-    top: 15%;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-.instructions div h1 {
-    font-size: 2.5vw;
-    /* font-size: 2.5vh; */
-    font-weight: 400;
-    letter-spacing: 2px;
+    height: 3.35rem;
+    border-radius: 3px;
+    font-size: 1.6rem;
+    border: none;
     margin-bottom: 2rem;
 }
 
-.instructions div h4 {
-    font-size: 1.5vw;
-    /* font-size: 1.5vh; */
-    font-weight: 200;
-    letter-spacing: 1.5px;
-    line-height: 1.6;
-    margin-left: 1.5rem;
+.availability select option {
+    font-size: 1.7rem;
 }
 
-.instructions div h4 i {
-    font-size: 2vw;
-}
-
-.instructions div button {
-    position: inherit;
-    left: 73%;
-    top: 30%;
-    font-size: 3rem;
-    padding: .4rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #000;
-    width: calc(100% - 79% - 2%);
-    height: auto;
-    background-color: #f1f6b3f8;
-    border-radius: 6px;
-    border: none;
-    box-shadow: 0 0 20px 0 rgba(243, 244, 161, 0.981);
-}
-
-.instructions div button:hover {
-    color: yellow;
-    background-color: rgb(63, 63, 48);
-}
-
-.process-start {
-    position: relative;
-    top: -.4rem;
-    color: #fff;
-}
-
-.process-start img {
-    width: 100%;
-    height: 30rem;
-}
-
-.process-start h3 {
-    position: absolute;
-    color: #dbe29e;
-    font-size: 3vw;
-    top: 10%;
-    left: 23%;
-    text-transform: uppercase;
+.availability #avail-btn {
+    margin-top: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.7rem;
     letter-spacing: 1px;
 }
 
-.process-start form {
-    width: 100%;
-    height: 20rem;
-    position: absolute;
-    top: 30%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-flow: wrap;
-}
-
-/* .process-start .col1 {
-    background-color: #41b41b;
-    width: 33%;
-}
-
-.process-start .col2 {
-    background-color: aqua;
-    width: 33%;
-}
-
-.process-start .col3 {
-    background-color: red;
-    width: 33%;
-} */
-
-.process-start .col1,
-.process-start .col2,
-.process-start .col3{
-    width: 32%;
-    padding: 1rem;
-}
-
-.process-start .col1 label,
-.process-start .col2 label,
-.process-start .col3 label {
-    font-size: 2rem;
-    margin-left: 25%;
-}
-
-.process-start .col1 input,
-.process-start .col2 input,
-.process-start .col3 select {
-    margin-left: 0;
-    font-size: 2rem;
-    width: 100%;
-    padding: 1rem;
-}
-
-.process-start .col3 select option{
-    font-size: 2rem;
-}
-
-.process-start #avail-btn{
-    font-size: 2rem;
-    letter-spacing: 1px;
-    border-radius: 3px;
-    margin: 1.5rem;
-    padding: .5rem;
-    width: 50%;
-    background-color: #2444e1f8;
-    text-transform: uppercase;
-    color: #fff;
-    border: none;
-}
-
-.process-start #avail-btn:hover{
-   background-color: #0e0ea8;
-   color: #fff;
-}
-
-/*
-.process-start div {
-    position: absolute;
-    display: flex;
-    top: 20%;
-    left: 10%;
-    /* box-shadow: 0 0 20px 0 rgba(244, 238, 238, 0.981); 
-    padding: 2rem;
-}
-
-.process-start div .col{
-    width: 33.33%;
-    float: left;
-    display: inline-flex;
-}
-
-.process-start div form label {
-    display: flex;
-    flex-direction: row;
-    color: #fff;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    line-height: 1.6;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.process-start div form input,
-.process-start div form select {
-    height: 3rem;
-    font-size: 1.5rem;
-    margin: .4rem 1rem 2rem 1rem;
-    border: none;
-    border-radius: 2px;
-}
-
-.process-start div form select option {
-    font-size: 1.5rem;
-    background-color: #000;
+.availability #avail-btn:hover {
+    background-color: #052f76;
     color: #fff;
 }
-
-.process-start div form #avail-btn {
-    color: #000;
-    background-color: #82f0e5f8;
-}
-
-.process-start div form #avail-btn:hover {
-    color: #82f0e5f8;
-    background-color: #000;
-} */
-
-/* .process-start #car-alone {
-    position: absolute;
-    width: 33.33rem;
-    height: 33rem;
-    top: 0;
-    left: 4%;
-    /* box-shadow: 0 0 20px 0 rgba(71, 69, 69, 0.981);
-}
-
-.process-start #bike-alone {
-    position: absolute;
-    width: 20rem;
-    height: 25rem;
-    top: 45%;
-    left: 5%;
-} */
-
-/* footer styling */
 
 footer {
-    width: 100%;
-    /* display: flex;
-    flex-direction: row; */
-    padding: 2rem;
-    line-height: 4rem;
-    letter-spacing: 2px;
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 1fr;
+    width: 96%;
+    height: auto;
+    background-color: #d7d7d7;
+    padding: 1rem;
+    margin: 5rem auto 1rem auto;
 }
 
-footer h3 {
-    font-size: 2.5rem;
+footer h1 {
+    font-size: 2.2rem;
+    padding: 1rem;
     font-weight: 500;
-    margin-bottom: 2rem;
 }
 
-footer h4 {
+h2 {
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: 500;
+}
+
+h3 {
     font-size: 1.5rem;
+    padding: 1rem;
     font-weight: 400;
-}
-
-footer i {
-    font-size: 1.5rem;
-}
-
-@media (max-width: 500px) {
-    .nav-bar a {
-        font-size: 1.3rem;
-    }
-    
-    .nav-bar ul i {
-        font-size: 1.2rem;
-    }
-    .instructions div button {
-        font-size: 1.2rem;
-    }
-
-    footer div h3 {
-        font-size: 1.8rem;
-    }
-
-    footer div h4,
-    footer div i {
-        font-size: 1rem;
-    }
-}
-
-@media (min-width: 500px) {
-    .instructions div button {
-        font-size: 1.5rem;
-    }
 }
 
 @media screen and (min-width: 700px) {
     * {
         font-size: 10.5px;
-    }
-
-    .instructions div button {
-        font-size: 2rem;
     }
 }
 
@@ -358,56 +228,4 @@ footer i {
     * {
         font-size: 11px;
     }
-
-    .instructions div button {
-        font-size: 3rem;
-    }
-
-    .process-start .col1 label,
-    .process-start .col2 label,
-    .process-start .col3 label {
-        font-size: 3rem;
-        margin-left: 25%;
-    }
-}
-
-@media (max-width: 600px){
-.process-start h3{
- top : 3%;
-}
-
-.process-start form{
-    top: 12%;
-    padding: 1rem;
-}
-.process-start .col1,
-.process-start .col2,
-.process-start .col3{
-    width: 100%;
-    padding: .5rem
-}
-.process-start .col1 label,
-.process-start .col2 label,
-.process-start .col3 label {
-    font-size: 1.7rem;
-    margin-left: 2%;
-}
-
-.process-start .col1 input,
-.process-start .col2 input,
-.process-start .col3 select {
-    margin-left: 0;
-    font-size: 1.4rem;
-    width: 100%;
-    padding: .5rem;
-}
-
-.process-start .col3 select option{
-    font-size: 1.7rem;
-}
-
-.process-start #avail-btn{
-   font-size: 1.5rem;
-   width: 100%;
-}
 }
